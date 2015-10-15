@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title Eshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/cssStyle")
+    @Scripts.Render("~/bundles/angularjs")
+   
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-2.1.3.js"></script>
+    <base href="/Admin">
+</head>
+<body>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        @RenderBody()
+    </div>
+    <div class="col-lg-2"></div>
+        @*@Scripts.Render("~/bundles/eshop")
+        @RenderSection("scripts", required: false)*@
+    <script src="~/ScriptsApp/EshopAdmin.js"></script>
+    <script src="~/ScriptsApp/Controllers/AdminController.js"></script>
+    <script src="~/ScriptsApp/Controllers/UzsakymaiController.js"></script>
+    <script src="~/ScriptsApp/configAdminas.js"></script>
+</body>
+</html>

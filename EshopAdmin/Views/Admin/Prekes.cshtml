@@ -1,0 +1,44 @@
+﻿<div class="container-fluid col-md-12">
+    <img id="mySpinner" src="~/Nuotraukos/ajax-loader.gif" ng-show="loading" />
+    <div class="row box" data-ng-repeat="preke in prekes">
+        <div class="col-md-2">
+            <img src="~/Nuotraukos/star100px.png" class="ajax-loader" />
+        </div>
+        <div class="col-md-10">
+            <div class="col-md-12">
+                <h3 data-ng-hide="preke.edit">{{preke.Pavadinimas}} </h3>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.Pavadinimas" />
+            </div>
+            <div class="col-md-12">
+                <div data-ng-hide="preke.edit">{{preke.Aprasymas}} </div>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.Aprasymas" />
+            </div>
+            <div class="col-md-3">
+                <p>Kaina</p>
+                <p data-ng-hide="preke.edit" style="color:red">{{preke.Kaina}} Eur</p>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.Kaina" />
+            </div>
+            <div class="col-md-3">
+                <p>Kiekis</p>
+                <p data-ng-hide="preke.edit">{{preke.EsamasKiekis}}</p>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.EsamasKiekis" />
+            </div>
+            <div class="col-md-3">
+                <p>Nupirkta</p>
+                <p data-ng-hide="preke.edit">{{preke.NupirktasKiekis}}</p>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.NupirktasKiekis" />
+            </div>
+            <div class="col-md-3">
+                <p>Galiojimo pabaiga</p>
+                <p data-ng-hide="preke.edit">{{preke.GaliojimoPabaiga | date : 'yyyy.MM.dd'}}</p>
+                <input type="text" data-ng-show="preke.edit" ng-model="preke.GaliojimoPabaiga" />
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" data-ng-click="pakeistiPreke(preke)" data-ng-hide="preke.edit" style="background-color:lightgreen">Keisti</button>
+                <button type="button" class="btn btn-primary" data-ng-click="istrintiPreke(preke)" data-ng-hide="preke.edit" style="background-color:red">Delete</button>
+                <button type="button" class="btn btn-primary" data-ng-click="uzsaugotiPakeitimus(preke)" data-ng-show="preke.edit" style="background-color:lightgreen">Uzsaugoti</button>
+                <button type="button" class="btn btn-primary" data-ng-click="atsauktiPakeitimus(preke)" data-ng-show="preke.edit" style="background-color:lightblue">Atsaukti</button>
+            </div>
+        </div>
+    </div>
+</div>

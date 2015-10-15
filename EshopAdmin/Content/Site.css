@@ -1,0 +1,16 @@
+﻿.mainContent {
+    margin-top: 60px;
+}
+
+.box {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 10px;
+}
+
+.ajax-loader
+{
+    /*hidden from IE 5-6 */
+    margin-top: 0; /* to clean up, just in case IE later supports valign! */
+    vertical-align: middle;
+    margin-top: expression(( 150 - this.height ) / 2); 
+}
