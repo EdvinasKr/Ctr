@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopAdmin", "EshopAdmin\Es
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{E9100982-43C3-4E61-8E1B-5BCA90E5113D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eshop", "..\Eshop\Eshop\Eshop\Eshop.csproj", "{77CDAEBF-76EC-45C0-91F2-B27B14872326}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{77CDAEBF-76EC-45C0-91F2-B27B14872326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

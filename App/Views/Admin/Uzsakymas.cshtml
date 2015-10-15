@@ -1,0 +1,36 @@
+﻿<div class="container-fluid col-md-12">
+    <div class="panel-group" id="{{uzsakymas.UzsakymoId}}_accordion" data-ng-repeat="uzsakymas in uzsakymai">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="{{uzsakymas.UzsakymoId}}_accordion" href="#{{uzsakymas.UzsakymoId}}_accordionOne">
+                        {{uzsakymas.UzsakymoId}}
+                        <span> Bendra suma : {{suma(uzsakymas)}} €</span>
+                    </a>
+                </h4>
+            </div>
+            <div id="{{uzsakymas.UzsakymoId}}_accordionOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Pavadinimas</th>
+                                <th>Kaina €</th>
+                                <th>Kiekis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="krepselis in uzsakymas.Krepselis">
+                                <td><img src="~/Nuotraukos/star100px.png" width="50" /></td>
+                                <td>{{krepselis.Pavadinimas}}</td>
+                                <td>{{krepselis.Kaina}}</td>
+                                <td>{{krepselis.Kiekis}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
