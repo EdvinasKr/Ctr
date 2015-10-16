@@ -1,0 +1,36 @@
+﻿<div class="container">
+    <div class="container-fluid col-md-8">
+        <div class="row box" data-ng-repeat="preke in prekes">
+            <div class="col-md-2">
+                <img src="~/Nuotraukos/star100px.png" />
+            </div>
+            <div class="col-md-10">
+                <div class="col-md-12">
+                    <h3>{{preke.Pavadinimas}} </h3>
+                </div>
+                <div class="col-md-12">
+                    <div>{{preke.Aprasymas}} </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Kaina</p>
+                    <p style="color:red">{{preke.Kaina}} Eur</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Kiekis</p>
+                    <p>{{preke.EsamasKiekis}}</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Nupirkta</p>
+                    <p>{{preke.NupirktasKiekis}}</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Galiojimo pabaiga</p>
+                    <p>{{preke.GaliojimoPabaiga | date : 'yyyy.MM.dd'}}</p>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" data-ng-click="add(preke)" style="width:100%; background-color:lightgray">Perku</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

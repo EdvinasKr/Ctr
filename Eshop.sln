@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 14 for Web
+# Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopAdmin", "EshopAdmin\EshopAdmin.csproj", "{D166A5B4-B649-4008-85A7-EB903B10C449}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{E9100982-43C3-4E61-8E1B-5BCA90E5113D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{77CDAEBF-76EC-45C0-91F2-B27B14872326}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopMain", "EshopMain\EshopMain.csproj", "{894B83A0-6899-409C-AB9C-95697C5F47A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{E9100982-43C3-4E61-8E1B-5BCA90E5113D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9100982-43C3-4E61-8E1B-5BCA90E5113D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9100982-43C3-4E61-8E1B-5BCA90E5113D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77CDAEBF-76EC-45C0-91F2-B27B14872326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77CDAEBF-76EC-45C0-91F2-B27B14872326}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77CDAEBF-76EC-45C0-91F2-B27B14872326}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77CDAEBF-76EC-45C0-91F2-B27B14872326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894B83A0-6899-409C-AB9C-95697C5F47A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894B83A0-6899-409C-AB9C-95697C5F47A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894B83A0-6899-409C-AB9C-95697C5F47A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894B83A0-6899-409C-AB9C-95697C5F47A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
