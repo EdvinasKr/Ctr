@@ -10,9 +10,9 @@ namespace EshopMain
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Vartotojas", action = "Index" }
+                "Default",
+                "{controller}/{action}",
+                new { controller = "Vartotojas", action = "Index" }
             );
         }
     }

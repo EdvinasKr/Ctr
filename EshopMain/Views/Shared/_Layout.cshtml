@@ -4,37 +4,33 @@
     <title>@ViewBag.Title Eshop</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-2.1.3.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/angular.js"></script>
-    <script src="~/Scripts/angular-ui-router.js"></script>
-    <script src="~/ScriptsApp/Eshop.js"></script>
-    <script src="~/ScriptsApp/Controllers/AdminController.js"></script>
-    <script src="~/ScriptsApp/configAdminas.js"></script>
-    <script src="~/ScriptsApp/configVartotojas.js"></script>
-    <script src="~/ScriptsApp/Controllers/KrepselisController.js"></script>
-    <script src="~/ScriptsApp/Controllers/UzsakymaiController.js"></script>
-    <base />
+    @Styles.Render("~/Content/css")
 </head>
-<body data-ng-app="EshopApp">
-    <nav role="navigation" class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Prekes", "Index", "Vartotojas")</li>
+                    <li>@Html.ActionLink("Adminas", "Index", "Admin")</li>
+                </ul>
+            </div>
         </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Prekes", "Index", "Vartotojas")</li>
-                <li>@Html.ActionLink("Adminas", "Index", "Admin")</li>
-            </ul>
-        </div>
-    </nav>
-    @RenderBody()
+    </div>
+    <div ng-app="EshopApp" class="container body-content">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angularjs")
+    @Scripts.Render("~/bundles/eshopJs")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

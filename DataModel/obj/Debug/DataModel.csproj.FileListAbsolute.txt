@@ -36,3 +36,12 @@ G:\Ctr\Ctr\DataModel\bin\Debug\EntityFramework.SqlServer.xml
 G:\Ctr\Ctr\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 G:\Ctr\Ctr\DataModel\obj\Debug\DataModel.dll
 G:\Ctr\Ctr\DataModel\obj\Debug\DataModel.pdb
+D:\Projektai\CtrShop\DataModel\bin\Debug\DataModel.dll.config
+D:\Projektai\CtrShop\DataModel\bin\Debug\DataModel.dll
+D:\Projektai\CtrShop\DataModel\bin\Debug\DataModel.pdb
+D:\Projektai\CtrShop\DataModel\bin\Debug\EntityFramework.dll
+D:\Projektai\CtrShop\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projektai\CtrShop\DataModel\bin\Debug\EntityFramework.xml
+D:\Projektai\CtrShop\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projektai\CtrShop\DataModel\obj\Debug\DataModel.dll
+D:\Projektai\CtrShop\DataModel\obj\Debug\DataModel.pdb

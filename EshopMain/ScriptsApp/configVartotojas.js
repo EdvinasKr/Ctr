@@ -1,20 +1,26 @@
-﻿EshopApp.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
+﻿EshopApp.config(function ($stateProvider, $locationProvider) {
 
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
     });
 
+    var listas = {
+        name: "PrekiuListas",
+        url: '/Vartotojas/PrekiuListas',
+        templateUrl: '/Vartotojas/PrekiuListas',
+        controller: 'KrepselisCtrl'
+    };
+
+    var krepselis = {
+        name: "Krepselis",
+        url: '/Vartotojas/Krepselis',
+        templateUrl: '/Vartotojas/Krepselis',
+        controller: 'KrepselisCtrl'
+    };
+
     $stateProvider
-        .state('PrekiuListas', {
-            url: '/Vartotojas/PrekiuListas',
-            templateUrl: '/Vartotojas/PrekiuListas',
-            controller: 'KrepselisCtrl'
-        })
-       .state('Krepselis', {
-           url: '/Vartotojas/Krepselis',
-           templateUrl: '/Vartotojas/Krepselis',
-           controller: 'KrepselisCtrl'
-       });
+        .state(listas)
+        .state(krepselis)
 });
 

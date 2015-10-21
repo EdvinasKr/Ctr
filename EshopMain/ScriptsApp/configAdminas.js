@@ -1,4 +1,4 @@
-﻿EshopApp.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
+﻿EshopApp.config(function ($stateProvider, $locationProvider) {
 
     $locationProvider.html5Mode({
         enabled: true,
