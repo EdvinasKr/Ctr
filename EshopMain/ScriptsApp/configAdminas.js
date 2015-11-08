@@ -7,21 +7,21 @@
 
     var preke = {
         name: "Prekes",
-        url: '/Admin/Prekes',
+        url: '/Admin',
         templateUrl: '/Admin/Prekes',
         controller: 'AdminCtrl'
     };
 
     var naujas = {
         name: "PridetiNauja",
-        url: '/Admin/PridetiNauja',
+        url: '/Admin',
         templateUrl: '/Admin/PridetiNauja',
         controller: 'AdminCtrl'
     };
 
     var uzsakymas = {
         name: "Uzsakymai",
-        url: '/Admin/Uzsakymas',
+        url: '/Admin',
         templateUrl: '/Admin/Uzsakymas',
         controller: 'UzsakymaiCtrl'
     };

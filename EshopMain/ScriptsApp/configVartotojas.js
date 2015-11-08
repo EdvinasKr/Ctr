@@ -7,16 +7,14 @@
 
     var listas = {
         name: "PrekiuListas",
-        url: '/Vartotojas/PrekiuListas',
+        url: '/',
         templateUrl: '/Vartotojas/PrekiuListas',
-        controller: 'KrepselisCtrl'
     };
 
     var krepselis = {
         name: "Krepselis",
-        url: '/Vartotojas/Krepselis',
+        url: '/',
         templateUrl: '/Vartotojas/Krepselis',
-        controller: 'KrepselisCtrl'
     };
 
     $stateProvider

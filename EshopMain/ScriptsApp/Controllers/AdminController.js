@@ -16,7 +16,7 @@
             .success(function (data) {
                 $scope.message = "Sekmingai prideta preke " + preke.Pavadinimas;
                 $scope.errorMessage = null;
-                $scope.init();
+                $scope.prekes = null;
             }).error(function () {
                 $scope.errorMessage = "Klaida pridedant preke";
             });
